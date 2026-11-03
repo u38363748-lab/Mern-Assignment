@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complex Table - Umair Beg</title>
+<style>
+:root{
+  --primary:#2c3e50;
+  --secondary:#3498db;
+  --accent:#e67e22;
+  --bg:#f4f6f9;
+  --white:#ffffff;
+  --border:#d5d8de;
+  --pad:12px;
+  --radius:10px;
+  --font-main:16px;
+  --font-small:14px;
+}
+body{font-family:Arial; background:var(--bg); padding:20px; font-size:var(--font-main)}
+h1{text-align:center; color:var(--primary)}
+.table-wrap{max-width:1300px; margin:auto; overflow-x:auto; background:var(--white); padding:15px; border-radius:var(--radius); box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+table{width:100%; min-width:1100px; border-collapse:collapse; font-size:var(--font-small)}
+caption{caption-side:top; font-size:20px; font-weight:bold; padding:var(--pad); color:var(--primary)}
+th, td{border:1px solid var(--border); padding:var(--pad); text-align:center}
+thead th{background:var(--primary); color:var(--white)}
+tfoot td{background:var(--primary); color:var(--white); font-weight:bold; padding:var(--pad)}
+tbody tr:nth-child(even){background:#eef2f7}
+tbody tr:hover{background:#d6eaf8; cursor:pointer; transition:0.2s}
+.badge{background:var(--secondary); color:white; padding:3px 8px; border-radius:12px; font-size:12px}
+</style>
+</head>
+<body>
+
+<h1>MERN Batch - Weekly Timetable & Fee Chart</h1>
+
+<div class="table-wrap">
+<table>
+<caption>20 Days - MERN Stack Class Timetable & Product Comparison (2026)</caption>
+
+<thead>
+<tr>
+<th scope="col">Day / Date</th>
+<th scope="col">09-10 AM</th>
+<th scope="col">10-11 AM</th>
+<th scope="col">11-12 PM</th>
+<th scope="col">12-01 PM</th>
+<th scope="col">01-02 PM</th>
+<th scope="col">02-03 PM</th>
+<th scope="col">03-04 PM</th>
+<th scope="col">04-05 PM</th>
+<th scope="col">Remarks / Fees</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><b>Day 1</b></td>
+<td rowspan="2">HTML Basics</td>
+<td>Tags</td>
+<td>Attributes</td>
+<td>Forms</td>
+<td rowspan="20" style="background:#fdebd0; writing-mode:vertical-lr; font-weight:bold; letter-spacing:2px;">L U N C H - B R E A K</td>
+<td>Practice</td>
+<td>Test</td>
+<td>Doubt</td>
+<td><span class="badge">Free</span></td>
+</tr>
+<tr>
+<td><b>Day 2</b></td>
+<td>Semantic</td>
+<td>Table</td>
+<td>Media</td>
+<td>Project 1</td>
+<td>Git</td>
+<td>Doubt</td>
+<td>Rs. 0</td>
+</tr>
+<tr>
+<td><b>Day 3</b></td>
+<td>CSS Intro</td>
+<td>Selectors</td>
+<td>Box Model</td>
+<td>Flexbox</td>
+<td>Grid Intro</td>
+<td>Practice</td>
+<td>Assignment</td>
+<td>Rs. 199</td>
+</tr>
+<tr>
+<td><b>Day 4</b></td>
+<td>Flex</td>
+<td>Grid</td>
+<td>Position</td>
+<td>Animation</td>
+<td>Responsive</td>
+<td>Media Query</td>
+<td>Project</td>
+<td>Rs. 199</td>
+</tr>
+<tr>
+<td><b>Day 5</b></td>
+<td colspan="2">CSS Variables Workshop</td>
+<td>Units</td>
+<td>Colors</td>
+<td>Project 2</td>
+<td>Review</td>
+<td>Test</td>
+<td>Rs. 299</td>
+</tr>
+<tr><td><b>Day 6</b></td><td>JS Intro</td><td>Variables</td><td>Data Types</td><td>Operators</td><td>Function</td><td>Loops</td><td>Task</td><td>Rs. 299</td></tr>
+<tr><td><b>Day 7</b></td><td>Array</td><td>Object</td><td>DOM</td><td>Events</td><td>Project</td><td>Debug</td><td>Quiz</td><td>Rs. 399</td></tr>
+<tr><td><b>Day 8</b></td><td>ES6</td><td>Arrow Func</td><td>Spread</td><td>Map/Filter</td><td>Mini App</td><td>Git Push</td><td>Review</td><td>Rs. 399</td></tr>
+<tr><td><b>Day 9</b></td><td>React Intro</td><td>JSX</td><td>Components</td><td>Props</td><td colspan="2">State & Hooks Session</td><td>Task</td><td>Rs. 499</td></tr>
+<tr><td><b>Day 10</b></td><td>useState</td><td>useEffect</td><td>Forms</td><td>Routing</td><td>Project 3</td><td>Deployment</td><td>Doubt</td><td>Rs. 499</td></tr>
+<tr><td><b>Day 11</b></td><td>Tailwind</td><td>API</td><td>Fetch</td><td>Axios</td><td>CRUD</td><td>Practice</td><td>Test</td><td>Rs. 599</td></tr>
+<tr><td><b>Day 12</b></td><td>Node.js</td><td>NPM</td><td>Express</td><td>Middleware</td><td>Routing</td><td>API Build</td><td>Task</td><td>Rs. 599</td></tr>
+<tr><td><b>Day 13</b></td><td>MongoDB</td><td>Schema</td><td>Model</td><td>CRUD</td><td>Connect</td><td>Project 4</td><td>Review</td><td>Rs. 699</td></tr>
+<tr><td><b>Day 14</b></td><td>Auth</td><td>JWT</td><td>Bcrypt</td><td>Login</td><td>Register</td><td>Protect</td><td>Doubt</td><td>Rs. 699</td></tr>
+<tr><td><b>Day 15</b></td><td>MERN Connect</td><td>Frontend</td><td>Backend</td><td>Deploy</td><td>Project 5</td><td>Testing</td><td>Final</td><td>Rs. 799</td></tr>
+<tr><td><b>Day 16</b></td><td>Revision</td><td>HTML</td><td>CSS</td><td>JS</td><td>React</td><td>Node</td><td>Mock</td><td>Rs. 0</td></tr>
+<tr><td><b>Day 17</b></td><td>Project Work</td><td>Bug Fix</td><td>UI Polish</td><td>API Test</td><td>GitHub</td><td>Pages</td><td>Demo</td><td>Rs. 0</td></tr>
+<tr><td><b>Day 18</b></td><td>Interview</td><td>Resume</td><td>Portfolio</td><td>LinkedIn</td><td>HR Qs</td><td>Tech Qs</td><td>Prep</td><td>Rs. 0</td></tr>
+<tr><td><b>Day 19</b></td><td>Final Test</td><td>HTML/CSS</td><td>JS Test</td><td>React Test</td><td>MERN Test</td><td>Viva</td><td>Result</td><td>Rs. 0</td></tr>
+<tr><td><b>Day 20</b></td><td>Certificate</td><td>Feedback</td><td>Celebration</td><td>Group Photo</td><td>Next Batch</td><td>Party</td><td>End</td><td><span class="badge">Done</span></td></tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="9">Total Course Duration: 20 Days | Total Projects: 5 | Created by Umair Beg - u38363748-lab</td>
+<td>Completed</td>
+</tr>
+</tfoot>
+
+</table>
+</div>
+
+<p style="text-align:center; margin-top:15px;">Features: caption, thead, tbody, tfoot, th scope, colspan x2, rowspan x2, CSS variables, border-collapse, striped rows, hover</p>
+
+</body>
+</html>
