@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Application Form - Umair Beg</title>
+<style>
+body{font-family: Arial; max-width:700px; margin:20px auto; padding:20px; background:#f5f5f5}
+form{background:white; padding:25px; border-radius:10px; box-shadow:0 0 10px #ccc}
+fieldset{margin-bottom:20px; border:1px solid #ddd; border-radius:8px; padding:15px}
+legend{font-weight:bold; color:#2c3e50; padding:0 10px}
+label{display:block; margin:10px 0 5px; font-weight:bold}
+input, select, textarea{width:100%; padding:8px; border:1px solid #ccc; border-radius:5px; box-sizing:border-box}
+input[type="radio"], input[type="checkbox"], input[type="color"], input[type="range"]{width:auto}
+button{padding:10px 20px; border:none; border-radius:5px; cursor:pointer; margin-right:10px}
+button[type="submit"]{background:#27ae60; color:white}
+button[type="reset"]{background:#e74c3c; color:white}
+</style>
+</head>
+<body>
+
+<h1>Job Application Form</h1>
+<p>Created by Umair Beg - MERN Assignment 2</p>
+
+<form>
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<label for="fullname">Full Name:</label>
+<input type="text" id="fullname" placeholder="Ex: Umair Beg" required minlength="3">
+
+<label for="email">Email:</label>
+<input type="email" id="email" placeholder="umair@example.com" required>
+
+<label for="password">Password:</label>
+<input type="password" id="password" placeholder="Min 6 characters" required minlength="6">
+
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" placeholder="9876543210" pattern="[0-9]{10}" required>
+
+<label for="portfolio">Portfolio URL:</label>
+<input type="url" id="portfolio" placeholder="https://yourportfolio.com">
+
+<label for="age">Age:</label>
+<input type="number" id="age" min="18" max="60" placeholder="18-60" required>
+
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" required>
+
+<label for="interviewtime">Interview Time:</label>
+<input type="time" id="interviewtime">
+
+<label for="color">Favorite Color:</label>
+<input type="color" id="color" value="#2c3e50">
+
+<label for="resume">Upload Resume:</label>
+<input type="file" id="resume" required>
+
+<label for="experience">Experience Level:</label>
+<input type="range" id="experience" min="0" max="10" value="5">
+
+</fieldset>
+
+<fieldset>
+<legend>Job Preferences</legend>
+
+<label>Gender:</label>
+<input type="radio" id="male" name="gender" required>
+<label for="male" style="display:inline; font-weight:normal">Male</label>
+<input type="radio" id="female" name="gender">
+<label for="female" style="display:inline; font-weight:normal">Female</label>
+
+<label for="position" style="margin-top:15px">Position:</label>
+<select id="position" required>
+<option value="">--Select--</option>
+<option value="frontend">Frontend Developer</option>
+<option value="backend">Backend Developer</option>
+<option value="mern">MERN Stack Developer</option>
+<option value="intern">Intern</option>
+</select>
+
+<label for="city">Preferred City:</label>
+<input list="cities" id="city" placeholder="Type or select city">
+<datalist id="cities">
+<option value="Lucknow"><option value="Delhi"><option value="Mumbai"><option value="Ballia">
+</datalist>
+
+<label>Skills:</label>
+<input type="checkbox" id="html"><label for="html" style="display:inline; font-weight:normal">HTML</label>
+<input type="checkbox" id="css"><label for="css" style="display:inline; font-weight:normal">CSS</label>
+<input type="checkbox" id="js"><label for="js" style="display:inline; font-weight:normal">JavaScript</label>
+
+<label for="about">Why hire you?</label>
+<textarea id="about" rows="5" placeholder="Write in 50 words..." required minlength="20"></textarea>
+
+</fieldset>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+</body>
+</html>
