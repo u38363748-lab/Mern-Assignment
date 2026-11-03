@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Grid - auto-fit</title>
+<style>
+body{font-family:Arial; padding:20px; background:#eef2f7}
+.product-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:20px}
+.card{background:white; padding:15px; border-radius:10px; text-align:center; box-shadow:0 2px 8px #ccc}
+.card img{width:100%; height:150px; object-fit:cover; border-radius:8px}
+</style></head><body>
+<h1>Product Grid (auto-fit, minmax)</h1>
+<p>Screen chota-bada karke dekho, grid apne aap adjust hoga!</p>
+<div class="product-grid">
+<div class="card"><img src="https://picsum.photos/200/150?1"><h3>Product 1</h3><p>Rs. 499</p></div>
+<div class="card"><img src="https://picsum.photos/200/150?2"><h3>Product 2</h3><p>Rs. 599</p></div>
+<div class="card"><img src="https://picsum.photos/200/150?3"><h3>Product 3</h3><p>Rs. 699</p></div>
+<div class="card"><img src="https://picsum.photos/200/150?4"><h3>Product 4</h3><p>Rs. 799</p></div>
+<div class="card"><img src="https://picsum.photos/200/150?5"><h3>Product 5</h3><p>Rs. 899</p></div>
+<div class="card"><img src="https://picsum.photos/200/150?6"><h3>Product 6</h3><p>Rs. 999</p></div>
+</div>
+</body></html>
